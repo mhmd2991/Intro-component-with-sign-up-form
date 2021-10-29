@@ -90,6 +90,12 @@ body {
     }
 }
 
+@media(max-width: 375px) {
+    .container::before {
+        background: url(../images/bg-intro-mobile.png) no-repeat;
+    }
+}
+
 .box h1 {
     color: var(--whiteColor);
     font-weight: bold;
@@ -182,12 +188,12 @@ form input[type="submit"] {
     display: none;
 }
 
-.input.error{
+.input.error {
     border-color: var(--redColor);
     color: var(--redColor);
 }
 
-.input.error .input::placeholder{
+.input.error .input::placeholder {
     color: var(--redColor);
 }
 
